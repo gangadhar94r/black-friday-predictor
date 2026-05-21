@@ -1,0 +1,170 @@
+<link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+<div class="body-content">
+  <div class="module">
+    <h1>Black Friday Sales Prediction</h1>
+  <form class = "form" action="/result" method="POST">
+   <div class="alert alert-error"></div>
+    <label for="UserID">User_ID</label>
+    <input type="text" id="User_ID" name="User_ID" required>
+    <br>
+    <label for="Product_ID">Product_ID</label>
+    <input type =  "text" id="Product_ID" name="Product_ID" required>
+    <br>
+    <label for="Gender">Gender</label>
+    <select id="Gender" name="Gender">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+    <br>
+    <label for="Age">Age</label>
+    <select id="Age" name="Age">
+      <option value="0">0-17</option>
+      <option value="1">18-25</option>
+      <option value="2">26-25</option>
+      <option value="3">36-45</option>
+      <option value="4">46-50</option>
+      <option value="5">51-55</option>
+      <option value="6">55+</option>
+    </select>
+    <br>
+    <label for="Occupation">Occupation</label>
+    <select id="Occupation" name="Occupation">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+    </select>
+    <br>
+    <label for="City_Category">City_Category</label>
+    <select id="City_Category" name="City_Category">
+      <option value="0">A</option>
+      <option value="1">B</option>
+      <option value="2">C</option>
+    </select>
+    <br>
+   
+    <label for="Stay_In_Current_City_Years">Stay_In_Current_City_Years</label>
+    <select id="Stay_In_Current_City_Years" name="Stay_In_Current_City_Years">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4+</option>
+    </select>
+    <br>
+    <label for="Marital_Status">Marital_Status</label>
+    <select id="Marital_Status" name="Marital_Status">
+      <option value="0">0</option>
+      <option value="1">1</option>
+    </select>
+    <br>
+    <label for="Product_Category_1">Product_Category_1</label>
+    <select id="Product_Category_1" name="Product_Category_1">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+    </select>
+    <br>
+    <label for="Product_Category_2">Product_Category_2</label>
+    <select id="Product_Category_2" name="Product_Category_2">
+      <option value="0">0.0</option>
+      <option value="1">1.0</option>
+      <option value="2">2.0</option>
+      <option value="3">3.0</option>
+      <option value="4">4.0</option>
+      <option value="5">5.0</option>
+      <option value="6">6.0</option>
+      <option value="7">7.0</option>
+      <option value="8">8.0</option>
+      <option value="9">9.0</option>
+      <option value="10">10.0</option>
+      <option value="11">11.0</option>
+      <option value="12">12.0</option>
+      <option value="13">13.0</option>
+      <option value="14">14.0</option>
+      <option value="15">15.0</option>
+      <option value="16">16.0</option>
+      <option value="17">17.0</option>
+      <option value="18">18.0</option>
+    </select>
+    <br>
+    <label for="Product_Category_3">Product_Category_3</label>
+    <select id="Product_Category_3" name="Product_Category_3">
+      <option value="0">3.0</option>
+      <option value="1">4.0</option>
+      <option value="2">5.0</option>
+      <option value="2">6.0</option>
+      <option value="3">8.0</option>
+      <option value="4">9.0</option>
+      <option value="5">10.0</option>
+      <option value="6">11.0</option>
+      <option value="7">nan</option>
+      <option value="8">12.0</option>
+      <option value="9">13.0</option>
+      <option value="10">14.0</option>
+      <option value="11">15.0</option>
+      <option value="12">16.0</option>
+      <option value="13">17.0</option>
+      <option value="14">18.0</option>
+    </select>   
+    <br>
+    <input type="submit" value="Submit" class="btn btn-block btn-primary">
+    <div id  = "Result" >
+      <h3> The Predicted purchase value is: {{prediction}} </h3>
+    </div>
+  </form>
+</div>
+</div>
+
+<!--<link href="//db.onlinewebfonts.com/c/a4e256ed67403c6ad5d43937ed48a77b?family=Core+Sans+N+W01+35+Light" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="main.css" type="text/css">
+<div class="body-content">
+  <div class="module">
+    <h1>Create an account</h1>
+    <form class="form" action="form.php" method="post" enctype="multipart/form-data" autocomplete="off">
+      <div class="alert alert-error"></div>
+      <input type="text" placeholder="User Name" name="username" required />
+      <input type="email" placeholder="Email" name="email" required />
+      <input type="password" placeholder="Password" name="password" autocomplete="new-password" required />
+      <input type="password" placeholder="Confirm Password" name="confirmpassword" autocomplete="new-password" required />
+      <div class="avatar"><label>Select your avatar: </label><input type="file" name="avatar" accept="image/*" required /></div>
+      <input type="submit" value="Register" name="register" class="btn btn-block btn-primary" />
+    </form>
+  </div>
+</div>-->
