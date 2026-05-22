@@ -64,7 +64,7 @@ def result():
         data = feature_Engineering_catBoost(data_df)
         print("length of col", len(data.columns))
         res = ValuePredictor_catBoost(data)
-        return render_template("index.html",prediction=res)    
+    return render_template("index.html", prediction=res, form_data=req_data)    
 
 if __name__ == "__main__":
     app.run() 
